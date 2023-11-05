@@ -485,6 +485,7 @@
 		/* MP */
 		/*novatek,mp-support-dt;*/
 	};
+#ifdef CONFIG_TOUCHSCREEN_FTS_MI
 	focaltech@38 {
 		compatible = "focaltech,focal";
 		reg = <0x38>;
@@ -509,6 +510,25 @@
 		panel = <&dsi_ebbg_fhd_ft8719_video_display>;
 		/* focaltech,have-key; */
 	};
+#else
+	focaltech@38 {
+		compatible = "focaltech,ft8719";
+		reg = <0x38>;
+
+		interrupts-extended = <&tlmm 31 IRQ_TYPE_EDGE_FALLING>;
+		reset-gpios = <&tlmm 32 GPIO_ACTIVE_LOW>;
+
+		iovcc-supply = <&pm8998_l14>;
+
+		pinctrl-0 = <&ts_int_active &ts_reset_active>;
+		pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
+		pinctrl-names = "default", "sleep";
+
+		touchscreen-size-x = <1080>;
+		touchscreen-size-y = <2246>;
+		panel = <&dsi_ebbg_fhd_ft8719_video_display>;
+	};
+#endif
 };
 
 &qupv3_se6_4uart {
