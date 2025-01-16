@@ -175,6 +175,16 @@
 };
 
 &pmi8998_wled {
+#ifdef CONFIG_BACKLIGHT_QCOM_WLED
+	status = "okay";
+	qcom,current-boost-limit = <970>;
+	qcom,ovp-millivolt = <29600>;
+	qcom,current-limit-microamp = <20000>;
+	qcom,num-strings = <2>;
+	qcom,switching-freq = <600>;
+	qcom,external-pfet;
+	qcom,cabc;
+#else
 	status = "okay";
 	linux,name = "wled";
 	qcom,fs-current-limit = <20000>;
@@ -182,6 +192,8 @@
 	qcom,ovp = <29600>;
 	qcom,en-cabc;
 	qcom,switching-freq = <600>;
+#endif
+
 };
 
 &pmi8998_rgb_led {
