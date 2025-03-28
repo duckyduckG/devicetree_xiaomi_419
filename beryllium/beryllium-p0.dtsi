@@ -175,7 +175,7 @@
 };
 
 &pmi8998_wled {
-#ifdef CONFIG_BACKLIGHT_QCOM_WLED
+#ifdef CONFIG_BACKLIGHT_QCOM_WLED_MAINLINE
 	status = "okay";
 	qcom,current-boost-limit = <970>;
 	qcom,ovp-millivolt = <29600>;

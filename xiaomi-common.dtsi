@@ -137,7 +137,7 @@
 	/delete-property/ qcom,hold-soc-while-full;	
 };
 
-#ifdef CONFIG_BACKLIGHT_QCOM_WLED
+#ifdef CONFIG_BACKLIGHT_QCOM_WLED_MAINLINE
 #else
 &pmi8998_wled {
 	/delete-property/ qcom,auto-calibration;
