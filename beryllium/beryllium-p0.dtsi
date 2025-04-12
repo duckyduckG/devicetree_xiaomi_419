@@ -898,4 +898,8 @@
 		status = "ok";
 		qcom,firmware-name = "slpi_br";
 	};
+
+	msm_gpu: qcom,kgsl-3d0@5000000 {
+	/delete-property/ qcom,idle-timeout;
+	};
 };
