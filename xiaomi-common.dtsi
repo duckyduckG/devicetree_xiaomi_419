@@ -103,6 +103,11 @@
 	qcom,icnss@18800000 {
 		qcom,iommu-dma = "bypass";
 	};
+
+	thermal_message: thermal-message {
+		board-sensor = "quiet_therm";
+		ambient-sensor = "quiet_therm";
+	};
 };
 #include "../qcom-sdm845/sdm845-wcd.dtsi"
 /* sdm845.dtsi */
