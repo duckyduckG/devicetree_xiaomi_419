@@ -20,9 +20,9 @@
 #include <dt-bindings/clock/qcom,rpmh.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
-#include "sdm845-sde-display.dtsi"
+#include "../../qcom-sdm845/sdm845-sde-display.dtsi"
 #include "dipper-p0.dtsi"
-#include "sdm845-audio-overlay.dtsi"
+#include "../../qcom-sdm845/sdm845-audio-overlay.dtsi"
 #include "dipper-p0-pinctrl.dtsi"
 
 / {

@@ -14,8 +14,8 @@
 
 /dts-v1/;
 
-#include "sdm845.dtsi"
-#include "sdm845-sde-display.dtsi"
+#include "../../qcom-sdm845/sdm845.dtsi"
+#include "../../qcom-sdm845/sdm845-sde-display.dtsi"
 #include "dipper-p0-pinctrl.dtsi"
 #include "dipper-p0.dtsi"
 
