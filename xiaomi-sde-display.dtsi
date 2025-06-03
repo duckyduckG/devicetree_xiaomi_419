@@ -17,6 +17,7 @@
 #include "dipper/display/dsi-panel-tianma-fhd-rm69299-cmd.dtsi"
 #include "../qcom-sdm845/dsi-panel-nt35597-dualmipi-wqxga-video.dtsi"
 #include "../qcom-sdm845/dsi-panel-nt35597-dualmipi-wqxga-cmd.dtsi"
+#include "../qcom-sdm845/dsi-panel-sim-video.dtsi"
 
 &soc {
 	dsi_nt36672a_panel_pwr_supply: dsi_nt36672a_panel_pwr_supply {
