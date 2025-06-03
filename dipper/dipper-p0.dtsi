@@ -366,8 +366,8 @@
 &vendor{
 	mtp_batterydata: qcom,battery-data {
 		qcom,batt-id-range-pct = <15>;
-		#include "batterydata-e1-coslight-3400mAh.dtsi"
-		#include "batterydata-e1-atl-3400mAh.dtsi"
+		#include "./battery/batterydata-e1-coslight-3400mAh.dtsi"
+		#include "./battery/batterydata-e1-atl-3400mAh.dtsi"
 	};
 
 	extcon_usb1: extcon_usb1 {
