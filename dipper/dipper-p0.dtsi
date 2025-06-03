@@ -31,7 +31,7 @@
 	reg = <0x86d00000 0x03C00000>;
 };
 
-&reserved_memory {
+&reserved_mem {
 		ramdump_fb_mem: ramdump_fb_region@af000000 {
 			compatible = "removed-dma-pool";
 			no-map;
