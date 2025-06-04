@@ -448,14 +448,8 @@
 	qcom,slope-limit-coeffs = <10 11 12 13>;
 };
 
-&pmi8998_pwm_1 {
+&pmi8998_lpg {
 	status = "okay";
-	qcom,period = <25000>;
-
-	qcom,pwm {
-		label = "pwm";
-		qcom,duty = <2500>;
-	};
 };
 
 &smb1355_charger_0 {
@@ -528,7 +522,7 @@
 		pinctrl-2 = <&lm3644_led_suspend &lm3644_pwm_disabled>;
 
 		lm3644,use-simulative-pwm;
-		pwms = <&pmi8998_pwm_1 0 0>;
+		pwms = <&pmi8998_lpg 1 25000>;
 		lm3644,period-us = <25000>;
 		lm3644,duty-us = <2500>;
 	};
