@@ -241,6 +241,7 @@
 };
 
 &sde_dsi {
+	vci-supply = <&disp_vci_vreg>;
 	qcom,dsi-default-panel = <&dsi_ss_ea8074_notch_fhd_cmd_display>;
 };
 
