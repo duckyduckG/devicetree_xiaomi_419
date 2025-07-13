@@ -241,7 +241,9 @@
 };
 
 &sde_dsi {
-	vci-supply = <&disp_vci_vreg>;
+	/* qcom,platform-te-gpio = <&tlmm 10 0>; */ // already in sdm845-sde
+	qcom,platform-reset-gpio = <&tlmm 6 0>; // missing in sdm845-sde
+	vci-supply = <&disp_vci_vreg>; // missing in sdm845-sde
 	qcom,dsi-default-panel = <&dsi_ss_ea8074_notch_fhd_cmd_display>;
 };
 
