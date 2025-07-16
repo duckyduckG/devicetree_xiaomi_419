@@ -12,10 +12,10 @@
  * GNU General Public License for more details.
  */
 #include <dt-bindings/gpio/gpio.h>
-#include "sdm845-pmic-overlay.dtsi"
-#include "sdm845-pinctrl-overlay.dtsi"
+#include "../../qcom-sdm845/sdm845-pmic-overlay.dtsi"
+#include "../../qcom-sdm845/sdm845-pinctrl-overlay.dtsi"
 //#include "dipper-camera-sensor-mtp.dtsi"
-#include "xiaomi-sde-display.dtsi"
+#include "../xiaomi-sde-display.dtsi"
 #include "equuleus-p0-camera-sensor-mtp.dtsi"
 
 &qupv3_se10_i2c {
@@ -330,8 +330,8 @@
 &vendor{
 	mtp_batterydata: qcom,battery-data {
 		qcom,batt-id-range-pct = <15>;
-		#include "batterydata-e8-coslight-3000mAh.dtsi"
-		#include "batterydata-e8-atl-3000mAh.dtsi"
+		#include "./battery/batterydata-e8-coslight-3000mAh.dtsi"
+		#include "./battery/batterydata-e8-atl-3000mAh.dtsi"
 	};
 
 	extcon_usb1: extcon_usb1 {
