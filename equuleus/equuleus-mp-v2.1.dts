@@ -17,7 +17,7 @@
 #include "../../qcom-sdm845/sdm845-sde-display.dtsi"
 #include "equuleus-mp-pinctrl.dtsi"
 #include "equuleus-mp.dtsi"
-#include "ursa-audio-overlay.dtsi"
+#include "../ursa/ursa-audio-overlay.dtsi"
 
 / {
 	model = "Xiaomi Technologies, Inc. Equuleus MP v2.1";
