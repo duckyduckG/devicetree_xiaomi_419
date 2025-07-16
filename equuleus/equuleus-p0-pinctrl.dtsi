@@ -11,5 +11,5 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include "ursa-p0-pinctrl.dtsi"
+#include "../ursa/ursa-p0-pinctrl.dtsi"
 
