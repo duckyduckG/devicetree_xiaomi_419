@@ -13,9 +13,9 @@
 
 #include "beryllium/dsi-panel-tianma-fhd-nt36672a-video.dtsi"
 #include "beryllium/dsi-panel-ebbg-fhd-ft8719-video.dtsi"
-#include "dipper/display/dsi-panel-gvo-fhd-rm69299-cmd.dtsi"
-#include "dipper/display/dsi-panel-tianma-fhd-rm69299-cmd.dtsi"
-#include "dipper/display/dsi-panel-ss-notch-fhd-ea8074-cmd.dtsi"
+#include "common/display/dsi-panel-gvo-fhd-rm69299-cmd.dtsi"
+#include "common/display/dsi-panel-tianma-fhd-rm69299-cmd.dtsi"
+#include "common/display/dsi-panel-ss-notch-fhd-ea8074-cmd.dtsi"
 
 &soc {
 	dsi_amoled_panel_pwr_supply: dsi_amoled_panel_pwr_supply {
