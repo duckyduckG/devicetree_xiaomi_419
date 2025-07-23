@@ -13,11 +13,11 @@
 
 /dts-v1/;
 
-#include "sdm845-v2.1.dtsi"
-#include "sdm845-sde-display.dtsi"
+#include "../../qcom-sdm845/sdm845-v2.1.dtsi"
+#include "../../qcom-sdm845/sdm845-sde-display.dtsi"
 #include "perseus-p1_2-pinctrl.dtsi"
-#include "perseus-p1_2.dtsi"
 #include "perseus-audio-overlay.dtsi"
+#include "perseus-p1_2.dtsi"
 
 / {
 	model = "Xiaomi Technologies, Inc. Perseus P1.2 v2.1";

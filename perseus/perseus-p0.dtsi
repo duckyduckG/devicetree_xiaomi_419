@@ -14,13 +14,14 @@
 
 
 #include <dt-bindings/gpio/gpio.h>
-#include "sdm845-pmic-overlay.dtsi"
-#include "sdm845-pinctrl-overlay.dtsi"
+#include "../../qcom-sdm845/sdm845-pmic-overlay.dtsi"
+#include "../../qcom-sdm845/sdm845-pinctrl-overlay.dtsi"
 #include "perseus-p0-camera-sensor-mtp.dtsi"
-#include "xiaomi-sde-display.dtsi"
+#include "../xiaomi-sde-display.dtsi"
+#include "../xiaomi-common.dtsi"
 
 &qupv3_se10_i2c {
-#include "smb1355.dtsi"
+#include "../../qcom-sdm845/smb1355.dtsi"
 };
 
 &removed_region {
@@ -320,9 +321,9 @@
 &vendor{
 	mtp_batterydata: qcom,battery-data {
 		qcom,batt-id-range-pct = <15>;
-		#include "batterydata-e5-sun-3200mAh.dtsi"
-		#include "batterydata-e5-cos-3200mAh.dtsi"
-		#include "batterydata-itech-3020mAh.dtsi"
+		#include "./battery/batterydata-e5-sun-3200mAh.dtsi"
+		#include "./battery/batterydata-e5-cos-3200mAh.dtsi"
+		#include "./battery/batterydata-itech-3020mAh.dtsi"
 	};
 
 	extcon_usb1: extcon_usb1 {

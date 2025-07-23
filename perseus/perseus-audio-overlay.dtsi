@@ -12,7 +12,7 @@
  * GNU General Public License for more details.
  */
 
-#include "sdm845-audio-overlay.dtsi"
+#include "../../qcom-sdm845/sdm845-audio-overlay.dtsi"
 &snd_934x {
 	qcom,audio-routing =
 		"AIF4 VI", "MCLK",
