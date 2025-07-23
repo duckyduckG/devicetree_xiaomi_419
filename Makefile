@@ -7,7 +7,7 @@ dtb-$(CONFIG_MACH_XIAOMI_E1S) := equuleus/equuleus-mp-v2.1.dtb
 ifeq ($(CONFIG_BUILD_ARM64_DT_OVERLAY),y)
 	dtbo-$(CONFIG_MACH_XIAOMI_E5) += perseus/perseus-mp-v2.1-overlay.dtbo
 
-perseus-mp-v2.1-overlay.dtbo-base := sdm845-v2.1.dtb
+perseus-mp-v2.1-overlay.dtbo-base := sdm845-v2.1-perseus.dtb
 endif
 
 always		:= $(dtb-y)
