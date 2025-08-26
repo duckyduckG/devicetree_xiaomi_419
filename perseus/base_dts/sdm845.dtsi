@@ -65,32 +65,12 @@
 	/delete-property/ qcom,smmu-fast-map;
 };
 
-&ipa_smmu_ap {
-	qcom,iommu-dma = "bypass";
-};
-
-&ipa_smmu_wlan {
-	qcom,iommu-dma = "bypass";
-};
-
-&ipa_smmu_uc {
-	qcom,iommu-dma = "bypass";
-};
-
 &soc {
-	restart@10ac000 {
-		qcom,force-warm-reboot;
-	};
-
 	qcom,msm-imem@146bf000 {
 		dload_type@18 {
 			compatible = "qcom,msm-imem-dload-type";
 			reg = <0x18 4>;
 		};
-	};
-
-	qcom,icnss@18800000 {
-		qcom,iommu-dma = "bypass";
 	};
 };
 

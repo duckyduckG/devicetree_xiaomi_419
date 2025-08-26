@@ -76,18 +76,6 @@
 	/delete-property/ qcom,smmu-fast-map;
 };
 
-&ipa_smmu_ap {
-	qcom,iommu-dma = "bypass";
-};
-
-&ipa_smmu_wlan {
-	qcom,iommu-dma = "bypass";
-};
-
-&ipa_smmu_uc {
-	qcom,iommu-dma = "bypass";
-};
-
 &soc {
 	qcom,msm-imem@146bf000 {
 		dload_type@18 {
@@ -95,11 +83,8 @@
 			reg = <0x18 4>;
 		};
 	};
-
-	qcom,icnss@18800000 {
-		qcom,iommu-dma = "bypass";
-	};
 };
+
 #include "../qcom-sdm845/sdm845-wcd.dtsi"
 /* sdm845.dtsi */
 
@@ -133,8 +118,7 @@
 	/delete-property/ qcom,hold-soc-while-full;	
 };
 
-#ifdef CONFIG_BACKLIGHT_QCOM_WLED_MAINLINE
-#else
+#ifndef CONFIG_BACKLIGHT_QCOM_WLED_MAINLINE
 &pmi8998_wled {
 	/delete-property/ qcom,auto-calibration;
 };
@@ -148,15 +132,6 @@
 &pmi8998_torch1 {
 	qcom,max-current = <300>;
 	qcom,current-ma = <75>;
-};
-
-&thermal_zones {
-	pm8005_tz {
-		disable-thermal-zone;
-	};
-	pmi8998_tz {
-		disable-thermal-zone;
-	};
 };
 
 /* pmi8998.dtsi */
