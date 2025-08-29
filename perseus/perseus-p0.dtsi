@@ -186,14 +186,6 @@
 	regulator-boot-on;
 };
 
-&pmi8998_rgb_led {
-	red {
-		label = "white";
-	};
-	/delete-node/ green;
-	/delete-node/ blue;
-};
-
 &pmi8998_haptics {
 	qcom,vmax-mv = <2552>;
 	qcom,lra-auto-mode;

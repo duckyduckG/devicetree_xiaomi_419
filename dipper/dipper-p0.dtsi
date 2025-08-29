@@ -215,14 +215,6 @@
 	qcom,dsi-default-panel = <&dsi_ss_ea8074_notch_fhd_cmd_display>;
 };
 
-&pmi8998_rgb_led {
-	red {
-		label = "white";
-	};
-	/delete-node/ green;
-	/delete-node/ blue;
-};
-
 &sde_dp {
 	status = "disabled";
 };
