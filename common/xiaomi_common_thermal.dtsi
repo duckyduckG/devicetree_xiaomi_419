@@ -33,7 +33,6 @@
 		qcom,ratiometric;
 		qcom,hw-settle-time = <200>;
 		qcom,pre-scaling = <1 1>;
-		/* qcom,scale-function = <26>; */
 	};
 
 	pa_therm0 {
@@ -78,7 +77,6 @@
 		label = "vph_pwr";
 		reg = <ADC_VPH_PWR>;
 		qcom,pre-scaling = <1 1>;
-		qcom,btm-channel-number = <0x60>;
 	};
 
 	xo_therm {
@@ -87,8 +85,6 @@
 		qcom,ratiometric;
 		qcom,pre-scaling = <1 1>;
 		qcom,hw-settle-time = <200>;
-		qcom,btm-channel-number = <0x68>;
-		qcom,thermal-node;
 	};
 
 	cam_therm0 {
@@ -97,8 +93,6 @@
 		qcom,ratiometric;
 		qcom,pre-scaling = <1 1>;
 		qcom,hw-settle-time = <200>;
-		qcom,btm-channel-number = <0x88>;
-		qcom,thermal-node;
 	};
 
 	cam_therm1 {
@@ -107,8 +101,6 @@
 		qcom,ratiometric;
 		qcom,pre-scaling = <1 1>;
 		qcom,hw-settle-time = <200>;
-		qcom,btm-channel-number = <0x70>;
-		qcom,thermal-node;
 	};
 
 	pa_therm0 {
@@ -117,8 +109,6 @@
 		qcom,ratiometric;
 		qcom,pre-scaling = <1 1>;
 		qcom,hw-settle-time = <200>;
-		qcom,btm-channel-number = <0x78>;
-		qcom,thermal-node;
 	};
 
 	pa_therm1 {
@@ -127,8 +117,6 @@
 		qcom,ratiometric;
 		qcom,pre-scaling = <1 1>;
 		qcom,hw-settle-time = <200>;
-		qcom,btm-channel-number = <0x90>;
-		qcom,thermal-node;
 	};
 
 	quiet_therm {
@@ -137,8 +125,6 @@
 		qcom,ratiometric;
 		qcom,pre-scaling = <1 1>;
 		qcom,hw-settle-time = <200>;
-		qcom,btm-channel-number = <0x80>;
-		qcom,thermal-node;
 	};
 };
 

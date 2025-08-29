@@ -616,8 +616,6 @@
 		qcom,ratiometric;
 		qcom,pre-scaling = <1 1>;
 		qcom,hw-settle-time = <200>;
-		qcom,btm-channel-number = <0x70>;
-		qcom,thermal-node;
 	};
 };
 
