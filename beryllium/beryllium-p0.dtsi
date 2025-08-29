@@ -16,9 +16,10 @@
 #include "../../qcom-sdm845/sdm845-pmic-overlay.dtsi"
 #include "../../qcom-sdm845/sdm845-pinctrl-overlay.dtsi"
 #include "beryllium-p0-camera-sensor-mtp.dtsi"
-#include "../xiaomi-common.dtsi"
 
 // Must include!!!
+#include "../common/base_dts/sdm845.dtsi"
+#include "../common/base_overlay/sdm845-pmic-overlay.dtsi"
 #include "../common/xiaomi_common.dtsi"
 #include "../common/xiaomi-common-sde-display.dtsi"
 // Must include!!!
@@ -252,8 +253,8 @@
 &vendor{
 	mtp_batterydata: qcom,battery-data {
 		qcom,batt-id-range-pct = <15>;
-		#include "batterydata-e10-atl-4000mAh.dtsi"
-		#include "batterydata-e10-cos-4000mAh.dtsi"
+		#include "./battery/batterydata-e10-atl-4000mAh.dtsi"
+		#include "./battery/batterydata-e10-cos-4000mAh.dtsi"
 	};
 
 	extcon_usb1: extcon_usb1 {

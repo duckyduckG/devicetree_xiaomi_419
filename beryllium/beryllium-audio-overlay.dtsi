@@ -11,7 +11,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include "../../qcom-sdm845/sdm845-audio-overlay.dtsi"
+#include "../common/base_overlay/sdm845-audio-overlay.dtsi"
 &snd_934x {
 	qcom,audio-routing =
 		"AIF4 VI", "MCLK",

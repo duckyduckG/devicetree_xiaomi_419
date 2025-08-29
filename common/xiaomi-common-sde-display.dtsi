@@ -11,16 +11,16 @@
  * GNU General Public License for more details.
  */
 
-#include "beryllium/dsi-panel-tianma-fhd-nt36672a-video.dtsi"
-#include "beryllium/dsi-panel-ebbg-fhd-ft8719-video.dtsi"
-#include "common/display/dsi-panel-gvo-fhd-rm69299-cmd.dtsi"
-#include "common/display/dsi-panel-tianma-fhd-rm69299-cmd.dtsi"
-#include "common/display/dsi-panel-ss-notch-fhd-ea8074-cmd.dtsi"
-#include "perseus/display/dsi-panel-samsung-fhd-ea8076-cmd.dtsi"
-#include "perseus/display/dsi-panel-visionox-fhd-r66455-cmd.dtsi"
-#include "perseus/display/dsi-panel-visionox-fhd-r66455-vid.dtsi"
-#include "polaris/display/dsi-panel-ebbg-fhd-ft8716-video.dtsi"
-#include "polaris/display/dsi-panel-jdi-fhd-nt35596s-video.dtsi"
+#include "../beryllium/display/dsi-panel-tianma-fhd-nt36672a-video.dtsi"
+#include "../beryllium/display/dsi-panel-ebbg-fhd-ft8719-video.dtsi"
+#include "display/dsi-panel-gvo-fhd-rm69299-cmd.dtsi"
+#include "display/dsi-panel-tianma-fhd-rm69299-cmd.dtsi"
+#include "display/dsi-panel-ss-notch-fhd-ea8074-cmd.dtsi"
+#include "../perseus/display/dsi-panel-samsung-fhd-ea8076-cmd.dtsi"
+#include "../perseus/display/dsi-panel-visionox-fhd-r66455-cmd.dtsi"
+#include "../perseus/display/dsi-panel-visionox-fhd-r66455-vid.dtsi"
+#include "../polaris/display/dsi-panel-ebbg-fhd-ft8716-video.dtsi"
+#include "../polaris/display/dsi-panel-jdi-fhd-nt35596s-video.dtsi"
 
 &soc {
 	dsi_amoled_panel_pwr_supply: dsi_amoled_panel_pwr_supply {
