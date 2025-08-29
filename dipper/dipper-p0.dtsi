@@ -15,12 +15,12 @@
 #include <dt-bindings/gpio/gpio.h>
 #include "../../qcom-sdm845/sdm845-pmic-overlay.dtsi"
 #include "../../qcom-sdm845/sdm845-pinctrl-overlay.dtsi"
-#include "../xiaomi-sde-display.dtsi"
 #include "dipper-p0-camera-sensor-mtp.dtsi"
 #include "../xiaomi-common.dtsi"
 
 // Must include!!!
 #include "../common/xiaomi_common.dtsi"
+#include "../common/xiaomi-common-sde-display.dtsi"
 // Must include!!!
 
 &soc {

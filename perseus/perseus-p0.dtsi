@@ -12,7 +12,6 @@
  * GNU General Public License for more details.
  */
 
-
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator-levels.h>
 #include <dt-bindings/input/qcom,qpnp-power-on.h>
@@ -20,11 +19,11 @@
 #include "../../qcom-sdm845/sdm845-pmic-overlay.dtsi"
 #include "../../qcom-sdm845/sdm845-pinctrl-overlay.dtsi"
 #include "perseus-p0-camera-sensor-mtp.dtsi"
-#include "../xiaomi-sde-display.dtsi"
-#include "./base_overlay/sdm845-pmic-overlay.dtsi"
 
 // Must include!!!
+#include "./base_overlay/sdm845-pmic-overlay.dtsi"
 #include "../common/xiaomi_common.dtsi"
+#include "../common/xiaomi-common-sde-display.dtsi"
 // Must include!!!
 
 &soc {

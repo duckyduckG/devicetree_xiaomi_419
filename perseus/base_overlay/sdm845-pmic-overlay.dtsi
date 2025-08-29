@@ -1,4 +1,2 @@
-// #include "../../../qcom-sdm845/sdm845-pmic-overlay.dtsi"
-
-#include "pmi8998.dtsi"
-#include "pm8998.dtsi"
+#include "pm8998-overlay.dtsi"
+#include "pmi8998-overlay.dtsi"
