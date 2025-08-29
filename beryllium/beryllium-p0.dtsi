@@ -131,6 +131,8 @@
 
 &sde_dsi {
 	/delete-property/ qcom,platform-te-gpio;
+	pinctrl-0 = <&sde_dsi_active>;
+	pinctrl-1 = <&sde_dsi_suspend>;
 	qcom,dsi-default-panel = <&dsi_tianma_fhd_nt36672a_video_display>;
 };
 
