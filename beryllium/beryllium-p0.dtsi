@@ -416,7 +416,6 @@
 		pinctrl-0 = <&ts_int_active_cust &ts_reset_active_cust>;
 		pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
 		novatek,config-array-size = <2>;
-		panel = <&dsi_tianma_fhd_nt36672a_video_display>;
 		novatek,cfg_0 {
 			novatek,tp-vendor = <0x46>;
 			novatek,hw-version = <0x1>;
@@ -453,7 +452,6 @@
 		pinctrl-names = "pmx_ts_active", "pmx_ts_suspend";
 		pinctrl-0 = <&ts_int_active_cust &ts_reset_active_cust>;
 		pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
-		panel = <&dsi_ebbg_fhd_ft8719_video_display>;
 		/* focaltech,have-key; */
 	};
 #else
@@ -472,7 +470,6 @@
 
 		touchscreen-size-x = <1080>;
 		touchscreen-size-y = <2246>;
-		panel = <&dsi_ebbg_fhd_ft8719_video_display>;
 	};
 #endif
 };
