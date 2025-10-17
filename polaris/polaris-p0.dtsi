@@ -17,12 +17,11 @@
 #include "../../qcom-sdm845/sdm845-pinctrl-overlay.dtsi"
 #include "polaris-camera-sensor-mtp.dtsi"
 
-// Must include!!!
+/* Xiaomi-common */
 #include "../common/base_dts/sdm845.dtsi"
 #include "../common/base_overlay/sdm845-pmic-overlay.dtsi"
 #include "../common/xiaomi_common.dtsi"
 #include "../common/xiaomi-common-sde-display.dtsi"
-// Must include!!!
 
 &soc {
 	gpio_keys {

@@ -21,14 +21,14 @@
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
 
-#include "../../qcom-sdm845/sdm845-sde-display.dtsi"
-#include "perseus-audio-overlay.dtsi"
-#include "perseus-p3-pinctrl.dtsi"
-#include "perseus-p3.dtsi"
+#include "../qcom-sdm845/sdm845-sde-display.dtsi"
+#include "./perseus/perseus-audio-overlay.dtsi"
+#include "./perseus/perseus-p1_2-pinctrl.dtsi"
+#include "./perseus/perseus-p1_2.dtsi"
 
 / {
-	model = "Xiaomi Technologies, Inc. Perseus P3 v2.1";
+	model = "Xiaomi Technologies, Inc. Perseus P1.2 v2.1";
 	compatible = "qcom,sdm845-mtp", "qcom,sdm845", "qcom,mtp";
 	qcom,msm-id = <321 0x20001>;
-	qcom,board-id = <93 0>;
+	qcom,board-id = <95 0>;
 };

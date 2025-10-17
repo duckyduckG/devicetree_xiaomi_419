@@ -17,12 +17,11 @@
 #include "../../qcom-sdm845/sdm845-pinctrl-overlay.dtsi"
 #include "beryllium-p0-camera-sensor-mtp.dtsi"
 
-// Must include!!!
+/* Xiaomi-common */
 #include "../common/base_dts/sdm845.dtsi"
 #include "../common/base_overlay/sdm845-pmic-overlay.dtsi"
 #include "../common/xiaomi_common.dtsi"
 #include "../common/xiaomi-common-sde-display.dtsi"
-// Must include!!!
 
 &soc {
 	gpio_keys {
@@ -118,13 +117,13 @@
 	qcom,qpnp-ibb-lab-pwrdn-delay = <1000>;
 };
 
-&dsi_tianma_fhd_nt36672a_video_display {
+&dsi_tianma_fhd_nt36672a_video {
 	qcom,panel-supply-entries = <&dsi_nt36672a_panel_pwr_supply>;
 	qcom,mdss-dsi-bl-pmic-control-type = "bl_ctrl_wled";
 	qcom,platform-reset-gpio = <&tlmm 6 0>;
 };
 
-&dsi_ebbg_fhd_ft8719_video_display {
+&dsi_ebbg_fhd_ft8719_video {
 	qcom,panel-supply-entries = <&dsi_ft8719_panel_pwr_supply>;
 	qcom,mdss-dsi-bl-pmic-control-type = "bl_ctrl_wled";
 	qcom,platform-reset-gpio = <&tlmm 6 0>;
@@ -134,7 +133,7 @@
 	/delete-property/ qcom,platform-te-gpio;
 	pinctrl-0 = <&sde_dsi_active>;
 	pinctrl-1 = <&sde_dsi_suspend>;
-	qcom,dsi-default-panel = <&dsi_tianma_fhd_nt36672a_video_display>;
+	qcom,dsi-default-panel = <&dsi_tianma_fhd_nt36672a_video>;
 };
 
 &pmi8998_wled {
@@ -413,7 +412,7 @@
 		novatek,reset-gpio = <&tlmm 32 0x00>;
 		novatek,irq-gpio = <&tlmm 31 0x2001>;
 		pinctrl-names = "pmx_ts_active", "pmx_ts_suspend";
-		pinctrl-0 = <&ts_int_active_cust &ts_reset_active_cust>;
+		pinctrl-0 = <&ts_int_active_br &ts_reset_active_br>;
 		pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
 		novatek,config-array-size = <2>;
 		novatek,cfg_0 {
@@ -450,7 +449,7 @@
 		focaltech,timeout-read-reg = <1000>;
 		focaltech,cutoff-power;
 		pinctrl-names = "pmx_ts_active", "pmx_ts_suspend";
-		pinctrl-0 = <&ts_int_active_cust &ts_reset_active_cust>;
+		pinctrl-0 = <&ts_int_active_br &ts_reset_active_br>;
 		pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
 		/* focaltech,have-key; */
 	};
@@ -464,7 +463,7 @@
 
 		iovcc-supply = <&pm8998_l14>;
 
-		pinctrl-0 = <&ts_int_active_cust &ts_reset_active_cust>;
+		pinctrl-0 = <&ts_int_active_br &ts_reset_active_br>;
 		pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
 		pinctrl-names = "default", "sleep";
 
